@@ -5,4 +5,4 @@ from.models import Inventory
 
 admin.site.register(Inventory)
 
-
+#test this
