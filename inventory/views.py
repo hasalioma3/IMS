@@ -2,4 +2,7 @@ from django.shortcuts import render
 
 # Create your views here.
 def index(request):
-    return render(request, "inventory/index.html")
+    context = {
+        "title": "Index Page"
+    }
+    return render(request, "inventory/index.html", context=context)
