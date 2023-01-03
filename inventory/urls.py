@@ -1,9 +1,10 @@
-from .views import index
+from .views import inventory_list,per_product_view
 from django.urls import path
 
 
 # namespace = "inventory"
 
 urlpatterns = [
-    path("", index, name="index"),
+    path("", inventory_list, name="index"),
+    path("product/<int:pk>", per_product_view, name="product"),
 ]
