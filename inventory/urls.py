@@ -1,4 +1,4 @@
-from .views import inventory_list,per_product_view
+from .views import inventory_list,per_product_view,add_product_view
 from django.urls import path
 
 
@@ -7,4 +7,5 @@ from django.urls import path
 urlpatterns = [
     path("", inventory_list, name="index"),
     path("product/<int:pk>", per_product_view, name="product"),
+    path("add/", add_product_view, name="add"),
 ]
